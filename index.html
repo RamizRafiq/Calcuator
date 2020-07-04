@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+<body >
+    <div class="container">
     
 <div class="main">
 
-    <div>
-<input type="text" name="" id="result" class="result" onfocus="this.style.backgroundColor='rgb(172, 97, 241)'"
-onblur="this.style.backgroundColor='rgb(149, 169, 229)'">
+    <div class="dispflex">
+<input type="text" name="" id="result" class="result" onfocus="this.style.backgroundColor='rgb(172, 97, 241)';removeZero()"
+onblur="this.style.backgroundColor='rgb(149, 169, 229)'; removeZero()">
+
+<i class="fa fa-exclamation-circle hidden" id="fas1" aria-hidden="true"></i>
+
 </div>
 
 <div >
 <button  class="btn50" onclick="clearResult()">C</button>
 <button  class="btn50 " onclick="Lifo()">&#8592</button>
+
+</div>
+<div>
+    <button class="btn" onclick="square()">x<sup>2</sup></button>
+    <button class="btn" onclick="squareRoot()">&#8730x</button>
+    <button class="btn" onclick="cube()">x<sup>3</sup></button>
+    <button class="btn" onclick="cubeRoot()"><sup>3</sup>&#8730x</button>
 
 </div>
 
@@ -73,7 +89,7 @@ onblur="this.style.backgroundColor='rgb(149, 169, 229)'">
 
 
 
-
+    </div>
 
 
 

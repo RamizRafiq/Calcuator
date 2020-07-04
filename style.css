@@ -1,11 +1,42 @@
+
+.container{
+width: 100%;
+height: auto;
+
+}
+
 .main{
-/* margin: ; */
+
 margin: 50px auto;
 width: 250px;
 border: 1px solid green;
 padding: 10px 20px;
 
 }
+
+.dispflex{
+/* display: flex; */
+position: relative;
+}
+.dispflex .fa-exclamation-circle{
+
+    position: absolute;
+    right: 0% ;
+    padding: 10px 20px;
+    top: 20%;
+    color:red ;
+    font-size: 25px;
+    /* background-color: red; */
+}
+.hidden{
+    visibility: hidden;
+}
+.show{
+
+    visibility: visible;
+}
+
+
 .result{
 
 width: 95%;
